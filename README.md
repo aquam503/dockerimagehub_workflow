@@ -9,21 +9,16 @@ Code is pushed to the main branch.
 A pull request is opened for the main branch.
 Steps in the Workflow
 1. Workflow Events
-on:  
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
-push: Runs the workflow when you push code to the main branch.
-pull_request: Runs the workflow when someone creates a pull request targeting the main branch.
+    * push: Runs the workflow when you push code to the main branch.
+    * pull_request: Runs the workflow when someone creates a pull request targeting the main branch.
 
 2. Jobs
 The workflow is divided into three jobs:
 
-dockerbuild
-build-and-test
-build-and-publish
+    * dockerbuild
+    * build-and-test
+    * build-and-publish
 
 * Job 1: Build Docker Image
 
